@@ -18,7 +18,7 @@ const TaskItem = (props) => {
       <TaskDate date={props.date} />
       <div className="task-item__description">
         <h2>{title}</h2>
-        <div className="task-item__status">${props.taskStatus}</div>
+        <div className="task-item__status">{props.taskStatus}</div>
       </div>
       <button onClick={clickHandler}>Change Title</button>
     </Card>
